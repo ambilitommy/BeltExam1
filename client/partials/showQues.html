@@ -1,0 +1,14 @@
+<a href="#/question/{{quesId}}/new_answer">Answer this question</a>
+<a href="#/" class="m-l-3">Logout</a>
+<div ng-repeat="q in quesA">
+  <h1>{{q.question}}<h1>
+    <h5>{{q.descr}}</h5>
+  <div class="m-l-2" ng-repeat="ans in q.ans">
+    Answers:{{ans.answer}}
+    <div>{{ans.details}}</div>
+    <a ng-click="likecount(ans._id)" class="btn btn-secondary btn-sm">
+      <span class="glyphicon glyphicon-thumbs-up" >{{ans.like_count}}</span>
+      Like
+    </a>
+  </div>
+</div>

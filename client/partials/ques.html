@@ -1,0 +1,19 @@
+<a href="#/">Logout</a>
+<h1>New Question</h1>
+<div class="container">
+  <form ng-submit="newQues()">
+    <div class="form-group row">
+      <label for="ques" class="col-sm-2 col-form-label">Question</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="ques" ng-model="ques.ques">
+      </div>
+      <div class="col-sm-8 m-t-2">
+        <label for="descr" class="col-sm-2 col-form-label">Description(optional)</label>
+        <textarea class="form-control" id="descr" ng-model="ques.descr"></textarea>
+      </div>
+    </div>
+    <input type="submit" class="btn btn-default" value="Submit">
+    <input type="button" class="btn btn-default m-l-2" value="Cancel" ng-click="cancel()">
+  </form>
+
+</div>

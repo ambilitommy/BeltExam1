@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="anguapp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <style>
+      .my-container img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+      }
+      .my-container div {
+          position: relative;
+          z-index: 2;
+      }
+    </style>
+    <script type="text/javascript">window._trackJs = { token: '666bcfa40f544f058ec1e6d2e420f39a' };</script>
+<script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+     <script src="assets/app.js"></script>
+    <script src="assets/controllers/newUserCtrl.js"></script>
+    <script src="assets/controllers/dashboardCtrl.js"></script>
+    <script src="assets/controllers/quesCtrl.js"></script>
+    <script src="assets/controllers/showQuesCtrl.js"></script>
+    <script src="assets/controllers/newAnsCtrl.js"></script>
+    <script src="assets/factories/newUserFactory.js"></script>
+    <script src="assets/factories/quesFactory.js"></script>
+    <script src="assets/factories/ansFactory.js"></script>
+  </head>
+  <body>
+    <div class="my-container">
+    <img src="img/Forums.png">
+    <div>
+      <h1 class="p-a-2"><u>Q & A<u></h1>
+      <div ng-view>
+        <!-- partials -->
+      </div>
+    </div>
+    </div>
+</body>
+</html>
